@@ -1,8 +1,8 @@
-## Desafio - CRUD - Refeições diárias
+# Desafio 01 - CRUD - Refeições diárias
 
 **RocketSeat - Ignite/Elixir**
 
-# 💻 Sobre o desafio
+## 💻 Sobre o desafio
 
 Nesse desafio, você deverá criar uma aplicação para monitoramento de consumo de alimentos durante o dia.
 
@@ -32,6 +32,16 @@ A aplicação deverá possuir rotas para satisfazer os requisitos de um CRUD nor
 2. Deve ser possível atualizar uma refeição já cadastrada, retornando um status `200` e a refeição atualizada;
 3. Deve ser possível exibir uma refeição existente, retornando um status `200` e a refeição buscada;
 4. Deve ser possível excluir uma refeição cadastrada, retornando um status `200` ou `204`.
+
+# Desafio 02 - Testando a aplicação
+## 💻 Sobre o desafio
+
+Nesse desafio, você deverá criar testes para a aplicação que foi desenvolvida ao longo desse módulo. 
+Caso você já tenha desenvolvido os testes como forma de complementar a aplicação, basta submeter o link do mesmo repositório para esse desafio.
+
+É importante que os testes tenham uma cobertura de 100%
+
+Exemplo:
 
 ![MYFOODDIARY](https://user-images.githubusercontent.com/57791712/113526228-9e157380-958f-11eb-91c1-f88db6c2bb45.gif)
 
