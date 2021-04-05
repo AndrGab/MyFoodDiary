@@ -41,26 +41,8 @@ Caso você já tenha desenvolvido os testes como forma de complementar a aplica�
 
 É importante que os testes tenham uma cobertura de 100%
 
-Exemplo:
+# Executando no Rest Client
 
 ![MYFOODDIARY](https://user-images.githubusercontent.com/57791712/113526228-9e157380-958f-11eb-91c1-f88db6c2bb45.gif)
 
-## bash
-
-```elixir
-~# mix phx.new myfooddiary --no-webpack --no-html
-
-
-~/myfooddiary# deps.get
-
-~/myfooddiary# mix credo.gen.config
-
-~/myfooddiary# mix credo
-
-~/myfooddiary# mix ecto.create
-
-~/myfooddiary# mix ecto.gen.migration create_meals_table
-
-~/myfooddiary# mix ecto.migrate
-```
 
