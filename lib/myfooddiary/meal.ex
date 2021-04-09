@@ -10,7 +10,7 @@ defmodule Myfooddiary.Meal do
 
   @required_params [:descricao, :data, :calorias, :user_id]
 
-  @derive {Jason.Encoder, only: [:id, :descricao, :data, :calorias]}
+  @derive {Jason.Encoder, only: [:id, :descricao, :data, :calorias, :user_id]}
 
   schema "meals" do
     field :descricao, :string
