@@ -7,4 +7,11 @@ defmodule Myfooddiary.Users.Get do
       user -> {:ok, user}
     end
   end
+
+  def get_all() do
+    case Repo.all(User) do
+      [] -> {:error, Error.build(:not_found, "Empty database")}
+      meal -> {:ok, meal}
+    end
+  end
 end

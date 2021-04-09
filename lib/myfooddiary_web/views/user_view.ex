@@ -11,4 +11,5 @@ defmodule MyfooddiaryWeb.UsersView do
   end
 
   def render("user.json", %{user: %User{} = user}), do: %{user: user}
+  def render("user.json", %{user: [%User{} | _rest] = user}), do: %{user: user}
 end

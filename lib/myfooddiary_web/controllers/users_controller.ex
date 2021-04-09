@@ -39,8 +39,10 @@ defmodule MyfooddiaryWeb.UsersController do
   end
 
   def index(conn, _params) do
-    conn
-    |> put_status(:ok)
-    |> text("MyFoodDiary API - Use you prefered REST Client do send requests")
+    with {:ok, user} <- Myfooddiary.get_users() do
+      conn
+      |> put_status(:ok)
+      |> render("user.json", user: user)
+    end
   end
 end
