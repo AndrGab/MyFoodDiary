@@ -22,6 +22,14 @@ defmodule MyfooddiaryWeb.MealsController do
     end
   end
 
+  def showuser(conn, %{"id" => id}) do
+    with {:ok, meal} <- Myfooddiary.get_meal_by_user(id) do
+      conn
+      |> put_status(:ok)
+      |> render("meal.json", meal: meal)
+    end
+  end
+
   def delete(conn, %{"id" => id}) do
     with {:ok, %Meal{}} <- Myfooddiary.delete_meal(id) do
       conn

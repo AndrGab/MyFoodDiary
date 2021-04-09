@@ -13,6 +13,7 @@ defmodule MyfooddiaryWeb.Router do
 
     get "/", RedirectController, :index
     resources "/meals", MealsController, except: [:new, :edit]
+    get "/meals/users/:id", MealsController, :showuser
     resources "/users", UsersController, except: [:new, :edit]
   end
 

@@ -11,6 +11,7 @@ defmodule Myfooddiary do
 
   defdelegate create_meal(params), to: MealCreate, as: :call
   defdelegate get_meal_by_id(id), to: MealGet, as: :by_id
+  defdelegate get_meal_by_user(id), to: MealGet, as: :by_user
   defdelegate get_meals, to: MealGet, as: :get_all
   defdelegate delete_meal(id), to: MealDelete, as: :call
   defdelegate update_meal(params), to: MealUpdate, as: :call
