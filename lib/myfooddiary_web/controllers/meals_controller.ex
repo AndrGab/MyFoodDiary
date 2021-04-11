@@ -22,7 +22,7 @@ defmodule MyfooddiaryWeb.MealsController do
     end
   end
 
-  def showuser(conn, %{"id" => id}) do
+  def showbyuser(conn, %{"id" => id}) do
     with {:ok, meal} <- Myfooddiary.get_meal_by_user(id) do
       conn
       |> put_status(:ok)
